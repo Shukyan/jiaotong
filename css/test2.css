@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+/* 声明字体*/
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  background: url(../images/bg.jpg) repeat top center;
+  line-height: 1.15;
+}
+header {
+  position: relative;
+  height: 65px;
+  background: url(../images/head_bg.png) repeat;
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10px 10px 0;
+}
+.mainbox .box1 {
+  position: absolute;
+  left: 30px;
+  top: 70px;
+  width: 530px;
+  height: 470px;
+}
+.mainbox .box2 {
+  position: absolute;
+  left: 30px;
+  top: 540px;
+  width: 530px;
+  height: 470px;
+}
+.mainbox .box3 {
+  position: absolute;
+  left: 600px;
+  top: 250px;
+  width: 850px;
+  height: 650px;
+}
+.mainbox .box4 {
+  position: absolute;
+  right: 30px;
+  top: 70px;
+  width: 530px;
+  height: 470px;
+}
+.mainbox .box5 {
+  position: absolute;
+  right: 30px;
+  top: 540px;
+  width: 530px;
+  height: 470px;
+}
+.no {
+  position: absolute;
+  right: 600px;
+  top: 70px;
+  width: 850px;
+  height: 150px;
+  background: rgba(101, 132, 226, 0.1);
+  padding: 0.1875rem;
+}
+
+.no .no-hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+
+.no .no-hd::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+
+.no .no-hd::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+}
+
+.no .no-hd ul {
+  display: flex;
+}
+
+.no .no-hd ul li {
+  position: relative;
+  flex: 1;
+  line-height: 1rem;
+  font-size: 0.875rem;
+  color: #ffeb7b;
+  text-align: center;
+  font-family: "electronicFont";
+}
+
+.no .no-hd ul li::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.no .no-bd ul {
+  display: flex;
+}
+
+.no .no-bd ul li {
+  flex: 1;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.225rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  padding-top: 0.125rem;
+}
+@keyframes rotate1 {
+  form {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  form {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}
